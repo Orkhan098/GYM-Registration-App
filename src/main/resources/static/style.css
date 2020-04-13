@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: yellow;
+    position: relative;
+}
+
+.heading h1{
+    text-align: center;
+    color:yellow;
+    margin-bottom: 25px;
+}
+.form{
+    width: 100%;
+    position: absolute;
+    left: 60%;
+
+}
+
+.picture{
+    position: absolute;
+    width: 50%;
+    top: 100px;
+    left: 25px;
+}
