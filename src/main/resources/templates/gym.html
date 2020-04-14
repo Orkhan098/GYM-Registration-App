@@ -3,10 +3,10 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Gym Memebrship</title>
+    <title>Gym Membership</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="src/main/resources/static/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -21,7 +21,7 @@
 </div>
 
 <div class="form">
-<form>
+<form method="post">
     <div class="form-group w-25" >
         <label for="name">Name</label>
         <input type="text" class="form-control" name="name">
@@ -44,23 +44,23 @@
 
     <div class="form-group w-25">
         <label for="passId">Passport Id</label>
-        <input type="email" class="form-control" name="passId">
-        <small id="emailHelp" class="form-text text-muted">This will not be shared with anyone else</small>
+        <input type="text" class="form-control" name="passId">
+        <small class="form-text text-muted">This will not be shared with anyone else</small>
     </div>
 
     <div class="custom-control custom-radio">
-        <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
-        <label class="custom-control-label" for="defaultGroupExample1">Male</label>
+        <input type="radio" class="custom-control-input"  name="gender">
+        <label class="custom-control-label" for="gender">Male</label>
     </div>
 
     <!-- Group of default radios - option 2 -->
     <div class="custom-control custom-radio">
-        <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" checked>
-        <label class="custom-control-label" for="defaultGroupExample2">Female</label>
+        <input type="radio" class="custom-control-input" name="gender" >
+        <label class="custom-control-label" for="gender">Female</label>
     </div>
 
-        <br><br>
-    <button type="submit" class="btn btn-success">Submit</button>
+        <br>
+    <button type="submit" class="btn btn-success"><a href="member.html">Submit</a></button>
 </form>
 </div>
 

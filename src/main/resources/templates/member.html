@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Member List</title>
+
+</head>
+<body>
+<table border="1px" style="border-collapse: collapse;">
+    <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Email</th>
+        <th>Phone</th>
+    </tr>
+
+    <tr>
+        <td th:text="${name}">Name</td>
+        <td th:text="${surname}">Surname</td>
+        <td th:text="${email}">Email</td>
+        <td th:text="${phone}">Phone</td>
+    </tr>
+</table>
+
+</div>
+</body>
+</html>
