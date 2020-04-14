@@ -28,10 +28,10 @@ public class GymController {
 
     @RequestMapping("/member.html" )
     public String members(Model model){
-//        model.addAttribute("name",gym.getName());
-//        model.addAttribute("surname",gym.getSurname());
-//        model.addAttribute("email",gym.getEmail());
-//        model.addAttribute("phone",gym.getPhone());
+        model.addAttribute("name",gym.getName());
+        model.addAttribute("surname",gym.getSurname());
+        model.addAttribute("email",gym.getEmail());
+        model.addAttribute("phone",gym.getPhone());
 
         return "member";
     }
