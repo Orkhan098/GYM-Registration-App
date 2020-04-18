@@ -18,19 +18,18 @@ public class Gym {
     private String passId;
     private String gender;
 
-    public Gym(Long id, String name, String surname, String email, String phone, String passId, String gender) {
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-        this.email = email;
-        this.phone = phone;
-        this.passId = passId;
-        this.gender = gender;
-    }
-
-    public Gym(){
-
-    }
+//    public Gym(String name, String surname, String email, String phone, String passId, String gender) {
+//        this.name = name;
+//        this.surname = surname;
+//        this.email = email;
+//        this.phone = phone;
+//        this.passId = passId;
+//        this.gender = gender;
+//    }
+//
+//    public Gym(){
+//
+//    }
 
     public String getGender() {
         return gender;

@@ -21,48 +21,50 @@
 </div>
 
 <div class="form">
-<form method="post">
+<form action="#" th:action="@{/gym}" th:object="${gym}"  method="post" >
     <div class="form-group w-25" >
         <label >Name</label>
-        <input type="text" class="form-control" name="name">
+        <input  th:field="*{name}" type="text" class="form-control">
     </div>
 
     <div class="form-group w-25">
         <label >Surname</label>
-        <input type="text" class="form-control" name="surname">
+        <input th:field="*{surname}" type="text" class="form-control">
     </div>
 
     <div class="form-group w-25">
         <label >Email</label>
-        <input type="email" class="form-control" name="email">
+        <input th:field="*{email}" type="email" class="form-control">
     </div>
 
     <div class="form-group w-25">
         <label>Phone</label>
-        <input type="text" class="form-control" name="phone" value="(+994)">
+        <input th:field="*{phone}" type="text" class="form-control" value="(+994)">
     </div>
 
     <div class="form-group w-25">
         <label >Passport Id</label>
-        <input type="text" class="form-control" name="passId">
+        <input th:field="*{passId}" type="text" class="form-control">
         <small class="form-text text-muted">This will not be shared with anyone else</small>
     </div>
 
     <div class="custom-control custom-radio">
-        <input type="radio" class="custom-control-input"  name="gender">
+        <input type="radio" class="custom-control-input" >
         <label class="custom-control-label" >Male</label>
     </div>
 
     <!-- Group of default radios - option 2 -->
     <div class="custom-control custom-radio">
-        <input type="radio" class="custom-control-input" name="gender" >
+        <input type="radio" class="custom-control-input" >
         <label class="custom-control-label" >Female</label>
     </div>
 
         <br>
-    <button type="submit" class="btn btn-success"><a href="member.html">Submit</a></button>
+    <button type="submit" class="btn btn-success">Submit</button>
 </form>
 </div>
+
+
 
 </body>
 </html>

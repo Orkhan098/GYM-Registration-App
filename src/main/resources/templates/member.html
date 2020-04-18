@@ -7,22 +7,31 @@
 
 </head>
 <body>
+<div>
 <table border="1px" style="border-collapse:collapse;">
     <tr>
         <th>Name</th>
         <th>Surname</th>
         <th>Email</th>
         <th>Phone</th>
+        <th>PassID</th>
+        <th>Gender</th>
     </tr>
 
-    <tr>
-        <td th:text="${name}">Name</td>
-        <td th:text="${surname}">Surname</td>
-        <td th:text="${email}">Email</td>
-        <td th:text="${phone}">Phone</td>
+    <tr >
+        <td th:text="${gym.name}">Name</td>
+        <td th:text="${gym.surname}">Surname</td>
+        <td th:text="${gym.email}">Email</td>
+        <td th:text="${gym.phone}">Phone</td>
+        <td th:text="${gym.passId}">Password ID</td>
+        <td th:text="${gym.gender}">Gender</td>
+
     </tr>
 </table>
 
 </div>
+<br><br>
+<a href="/gym">Return to Registration Page</a>
+
 </body>
 </html>
