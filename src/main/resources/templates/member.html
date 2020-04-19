@@ -22,7 +22,7 @@
         <td th:text="${gym.name}">Name</td>
         <td th:text="${gym.surname}">Surname</td>
         <td th:text="${gym.email}">Email</td>
-        <td th:text="${gym.phone}">Phone</td>
+        <td th:text="${gym.seNo}+''+${gym.phone}">Phone</td>
         <td th:text="${gym.passId}">Password ID</td>
         <td th:text="${gym.gender}">Gender</td>
 
@@ -32,6 +32,10 @@
 </div>
 <br><br>
 <a href="/gym">Return to Registration Page</a>
+<!--<script>-->
+<!--    var seNo=document.getElementById("seNo").value;-->
+<!--    document.getElementById("phone").innerHTML=seNo;-->
+<!--</script>-->
 
 </body>
 </html>

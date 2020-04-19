@@ -24,33 +24,39 @@
 <form action="#" th:action="@{/gym}" th:object="${gym}"  method="post" >
     <div class="form-group w-25" >
         <label >Name</label>
-        <input  th:field="*{name}" type="text" class="form-control">
+        <input  th:field="*{name}" type="text" class="form-control" required>
     </div>
 
     <div class="form-group w-25">
         <label >Surname</label>
-        <input th:field="*{surname}" type="text" class="form-control">
+        <input th:field="*{surname}" type="text" class="form-control" required>
     </div>
 
     <div class="form-group w-25">
         <label >Email</label>
-        <input th:field="*{email}" type="email" class="form-control">
+        <input th:field="*{email}" type="email" class="form-control" required>
     </div>
 
-    <div class="form-group w-25">
         <label>Phone</label>
-        <input th:field="*{phone}" type="text" class="form-control" value="(+994)">
+    <div class="form-group w-25 form-inline" >
+        <select th:field="*{seNo}" class="form-control">
+            <option value="(+994)">+994</option>
+            <option  value="(+456)">+456</option>
+            <option  value="(+234)">+234</option>
+            <option  value="(+345)">+345</option>
+        </select>
+        <input th:field="*{phone}" type="text" maxlength="9" class="form-control" style="margin-left: 5px" required >
     </div>
 
     <div class="form-group w-25">
         <label >Passport Id</label>
-        <input th:field="*{passId}" type="text" class="form-control">
+        <input th:field="*{passId}" type="text" class="form-control" required>
         <small class="form-text text-muted">This will not be shared with anyone else</small>
     </div>
 
     <div class="radio">
-        <label><input th:field="*{gender}" type="radio" value="Male" >Male</label>
-        <label><input th:field="*{gender}" type="radio" value="Female">Female</label>
+        <label><input th:field="*{gender}" type="radio" value="Male" required >Male</label>
+        <label><input th:field="*{gender}" type="radio" value="Female" required>Female</label>
     </div>
 
         <br>

@@ -17,6 +17,7 @@ public class Gym {
     private String phone;
     private String passId;
     private String gender;
+    private String seNo;
 
 //    public Gym(String name, String surname, String email, String phone, String passId, String gender) {
 //        this.name = name;
@@ -30,6 +31,15 @@ public class Gym {
 //    public Gym(){
 //
 //    }
+
+
+    public String getSeNo() {
+        return seNo;
+    }
+
+    public void setSeNo(String seNo) {
+        this.seNo = seNo;
+    }
 
     public String getGender() {
         return gender;
