@@ -24,17 +24,17 @@
 <form action="#" th:action="@{/gym}" th:object="${gym}"  method="post" >
     <div class="form-group w-25" >
         <label >Name</label>
-        <input  th:field="*{name}" type="text" class="form-control" required>
+        <input  th:field="*{name}" type="text" class="form-control" id="name" required>
     </div>
 
     <div class="form-group w-25">
         <label >Surname</label>
-        <input th:field="*{surname}" type="text" class="form-control" required>
+        <input th:field="*{surname}" type="text" class="form-control" id="surname" required>
     </div>
 
     <div class="form-group w-25">
         <label >Email</label>
-        <input th:field="*{email}" type="email" class="form-control" required>
+        <input th:field="*{email}" type="email" class="form-control" id="email" required>
     </div>
 
         <label>Phone</label>
@@ -45,26 +45,41 @@
             <option  value="(+234)">+234</option>
             <option  value="(+345)">+345</option>
         </select>
-        <input th:field="*{phone}" type="text" maxlength="9" class="form-control" style="margin-left: 5px" required >
+        <input th:field="*{phone}" type="text" maxlength="9" class="form-control" id="phone" style="margin-left: 5px" required >
     </div>
 
     <div class="form-group w-25">
         <label >Passport Id</label>
-        <input th:field="*{passId}" type="text" class="form-control" required>
+        <input th:field="*{passId}" type="text" class="form-control" id="passId" required>
         <small class="form-text text-muted">This will not be shared with anyone else</small>
     </div>
 
     <div class="radio">
-        <label><input th:field="*{gender}" type="radio" value="Male" required >Male</label>
-        <label><input th:field="*{gender}" type="radio" value="Female" required>Female</label>
+        <label><input th:field="*{gender}" type="radio" value="Male" id="male" required >Male</label>
+        <label><input th:field="*{gender}" type="radio" value="Female" id="female" required>Female</label>
     </div>
 
         <br>
-    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="submit" class="btn btn-success" onclick="success()">Submit</button>
 </form>
 </div>
 
+<script>
+    function success(){
+        var f1=document.getElementById("name").value;
+        var f2=document.getElementById("surname").value;
+        var f3=document.getElementById("email").value;
+        var f4=document.getElementById("phone").value;
+        var f5=document.getElementById("passId").value;
+        var f6=document.getElementById("male").value;
+        var f7=document.getElementById("female").value;
 
+        if(f1 !='' && f2 !='' && f3 !='' && f4 !='' && f5 !='' && f6 !='' && f7 !='' ) {
+
+                   alert("You have successfully signed in")
+        }
+    }
+</script>
 
 </body>
 </html>
