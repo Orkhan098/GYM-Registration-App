@@ -48,15 +48,9 @@
         <small class="form-text text-muted">This will not be shared with anyone else</small>
     </div>
 
-    <div class="custom-control custom-radio">
-        <input type="radio" class="custom-control-input" >
-        <label class="custom-control-label" >Male</label>
-    </div>
-
-    <!-- Group of default radios - option 2 -->
-    <div class="custom-control custom-radio">
-        <input type="radio" class="custom-control-input" >
-        <label class="custom-control-label" >Female</label>
+    <div class="radio">
+        <label><input th:field="*{gender}" type="radio" value="Male" >Male</label>
+        <label><input th:field="*{gender}" type="radio" value="Female">Female</label>
     </div>
 
         <br>
