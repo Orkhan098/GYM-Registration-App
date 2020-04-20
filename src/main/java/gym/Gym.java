@@ -19,7 +19,6 @@ public class Gym {
 
     public Gym() {
     }
-
     public String getGender() {
         return gender;
     }
