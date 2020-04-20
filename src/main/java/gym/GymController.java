@@ -8,13 +8,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class GymController {
     @GetMapping("/gym")
     public String sendForm(Gym gym) {
-
         return "gym";
     }
 
     @PostMapping("/gym")
     public String processForm(Gym gym) {
-
         return "member";
     }
 
