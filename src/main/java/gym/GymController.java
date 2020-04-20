@@ -19,32 +19,4 @@ public class GymController {
     }
 
 
-
-
-
-
-    //    @Autowired
-//    private static Gym gym;
-
-//    @RequestMapping("/member")
-//    public String index(){
-//        return "gym";
-//    }
-
-
-//    @RequestMapping("/member" )
-//    public String members(Model model){
-//
-//        model.addAttribute("name",gym.getName());
-//        model.addAttribute("surname",gym.getSurname());
-//        model.addAttribute("email",gym.getEmail());
-//        model.addAttribute("phone",gym.getPhone());
-//
-//        return "member";
-//    }
-
-
-
-
-
 }

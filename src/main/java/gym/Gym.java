@@ -1,16 +1,14 @@
 package gym;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-@Entity
+@Entity(name="members")
 public class Gym {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String name;
     private String surname;
     private String email;
@@ -19,26 +17,7 @@ public class Gym {
     private String gender;
     private String seNo;
 
-//    public Gym(String name, String surname, String email, String phone, String passId, String gender) {
-//        this.name = name;
-//        this.surname = surname;
-//        this.email = email;
-//        this.phone = phone;
-//        this.passId = passId;
-//        this.gender = gender;
-//    }
-//
-//    public Gym(){
-//
-//    }
-
-
-    public String getSeNo() {
-        return seNo;
-    }
-
-    public void setSeNo(String seNo) {
-        this.seNo = seNo;
+    public Gym() {
     }
 
     public String getGender() {
@@ -95,5 +74,12 @@ public class Gym {
 
     public void setPassId(String passId) {
         this.passId = passId;
+    }
+    public String getSeNo() {
+        return seNo;
+    }
+
+    public void setSeNo(String seNo) {
+        this.seNo = seNo;
     }
 }
