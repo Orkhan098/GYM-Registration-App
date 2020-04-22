@@ -1,6 +1,7 @@
 package gym;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity(name="members")
 public class Gym {
@@ -17,8 +18,10 @@ public class Gym {
     private String gender;
     private String seNo;
 
+
     public Gym() {
     }
+
     public String getGender() {
         return gender;
     }

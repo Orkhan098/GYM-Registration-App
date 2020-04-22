@@ -18,13 +18,13 @@
         <th>Gender</th>
     </tr>
 
-    <tr >
-        <td th:text="${gym.name}">Name</td>
-        <td th:text="${gym.surname}">Surname</td>
-        <td th:text="${gym.email}">Email</td>
-        <td th:text="${gym.seNo}+''+${gym.phone}">Phone</td>
-        <td th:text="${gym.passId}">Password ID</td>
-        <td th:text="${gym.gender}">Gender</td>
+    <tr th:each="member : ${members}">
+        <td th:text="${member.name}">Name</td>
+        <td th:text="${member.surname}">Surname</td>
+        <td th:text="${member.email}">Email</td>
+        <td th:text="${member.seNo}+''+${member.phone}">Phone</td>
+        <td th:text="${member.passId}">Password ID</td>
+        <td th:text="${member.gender}">Gender</td>
 
     </tr>
 </table>
