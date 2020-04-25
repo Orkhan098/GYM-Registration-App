@@ -3,19 +3,28 @@ package gym;
 import javax.persistence.*;
 import java.util.List;
 
-@Entity(name="members")
+@Entity
+@Table ( name = "Members")
 public class Gym {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column ( name = "memberID")
     private Long id;
 
+    @Column ( name = "memberName")
     private String name;
+    @Column ( name = "memberSurN")
     private String surname;
+    @Column ( name = "memberEmail")
     private String email;
+    @Column ( name = "memberPhone")
     private String phone;
+    @Column ( name = "memberPass")
     private String passId;
+    @Column ( name = "memberGen")
     private String gender;
+    @Column ( name = "memberNo")
     private String seNo;
 
 
